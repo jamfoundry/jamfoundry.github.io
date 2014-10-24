@@ -1,0 +1,98 @@
+body {
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	font-weight: 200;
+}
+
+section {
+	font-size: 120%;
+}
+section.padded {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+section.light {
+	background-color: #f6f6f6;
+}
+section.dark {
+	background-color: black;
+	color: white;
+}
+
+h2 {
+	font-family: "Roboto Slab", serif;
+}
+
+.navbar-default {
+	background: rgba(0,0,0,0.65);
+	border: none;
+	box-shadow: none;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+	font-family: "Roboto Slab", serif;
+	opacity: 0.8;
+}
+.navbar-default .navbar-brand:hover {
+	color: white;
+	opacity: 1;
+	transition: opacity linear 0.1s;
+}
+
+.navbar-default .navbar-nav > li > a {
+	position: relative;
+	color: white;
+	font-weight: 400;
+	opacity: 0.8;
+	text-shadow: none;
+	text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: white;
+	opacity: 1;
+	transition: opacity linear 0.1s;
+}
+.navbar-default .navbar-nav > .active > a {
+	background: transparent;
+	box-shadow: none;
+	color: white;
+}
+.navbar-default .navbar-nav > .active > a::before {
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	bottom: 10px;
+	border-bottom: white 1px solid;
+	content: "";
+}
+
+.splash {
+	position: relative;
+	background: url(/img/background.jpg) center center no-repeat;
+	background-size: cover;
+	color: white;
+	padding-top: 16em;
+	padding-bottom: 14em;
+}
+
+.splash::before {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(100,0,0,0.25);
+	background-image: radial-gradient(circle, rgba(100,0,0,0.15), rgba(100,0,0,0.65));
+	content: "";
+	display: block;
+}
+
+.splash h1 {
+	font-family: "Roboto Slab", serif;
+	font-size: 80px;
+	font-weight: 700;
+}
+.splash p {
+	font-family: "Roboto Slab", serif;
+	font-size: 150%;
+}
