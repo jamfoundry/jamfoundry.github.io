@@ -4,11 +4,11 @@ body {
 }
 
 section {
-	font-size: 120%;
+	font-size: 150%;
 }
 section.padded {
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	padding-top: 3em;
+	padding-bottom: 3em;
 }
 section.light {
 	background-color: #f6f6f6;
@@ -20,6 +20,7 @@ section.dark {
 
 h2 {
 	font-family: "Roboto Slab", serif;
+	font-size: 125%;
 }
 
 .navbar-default {
@@ -33,7 +34,7 @@ h2 {
 }
 
 .navbar-scrolled {
-	background: rgba(0,0,0,0.33);
+	background: rgba(10,60,90,0.8);
 }
 
 .navbar-default .navbar-brand {
@@ -84,11 +85,10 @@ h2 {
 
 .splash {
 	position: relative;
-	background: url(/img/background.jpg) center center no-repeat;
-	background-size: cover;
+	background: #5bf;
 	color: white;
-	padding-top: 16em;
-	padding-bottom: 14em;
+	padding-top: 5em;
+	padding-bottom: 4em;
 }
 
 .splash::before {
@@ -97,18 +97,50 @@ h2 {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-color: rgba(100,0,0,0.25);
-	background-image: radial-gradient(circle, rgba(100,0,0,0.15), rgba(100,0,0,0.65));
+	background-color: rgba(0,0,0,0.2);
+	background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.25));
 	content: "";
 	display: block;
 }
 
 .splash h1 {
 	font-family: "Roboto Slab", serif;
-	font-size: 80px;
+	font-size: 4em;
 	font-weight: 700;
 }
 .splash p {
 	font-family: "Roboto Slab", serif;
-	font-size: 150%;
+	font-size: 120%;
+}
+
+.splash .ipad {
+	position: relative;
+	background: url(/img/ipad-white-landscape.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-top: 69%;
+}
+
+.feature-circle {
+	position: relative;
+	background: #eee;
+	background-position: center center;
+	background-size: cover;
+	border-radius: 100%;
+	margin: 0 auto;
+	width: 50%;
+}
+.feature-circle span {
+	display: block;
+	padding-top: 100%;
+}
+
+.iphone {
+	position: relative;
+	background: url(/img/iphone-black-landscape.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-top: 50%;
 }
