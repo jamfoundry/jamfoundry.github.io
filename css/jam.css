@@ -11,7 +11,7 @@ section.padded {
 	padding-bottom: 3em;
 }
 section.light {
-	background-color: #f6f6f6;
+	background-color: #f3f3f3;
 }
 section.dark {
 	background-color: black;
@@ -22,6 +22,12 @@ h2 {
 	font-family: "Roboto Slab", serif;
 	font-size: 125%;
 }
+
+a:hover {
+	text-decoration: none;
+}
+
+.no-top-margin { margin-top: 0; }
 
 .navbar-default {
 	background: rgba(0,0,0,0);
@@ -87,7 +93,7 @@ h2 {
 	position: relative;
 	background: #5bf;
 	color: white;
-	padding-top: 5em;
+	padding-top: 4em;
 	padding-bottom: 4em;
 }
 
@@ -105,12 +111,14 @@ h2 {
 
 .splash h1 {
 	font-family: "Roboto Slab", serif;
-	font-size: 4em;
+	font-size: 3em;
 	font-weight: 700;
+	margin: 0.5em 0 0.5em 0;
 }
 .splash p {
 	font-family: "Roboto Slab", serif;
 	font-size: 120%;
+	margin: 0 0 0.5em;
 }
 
 .splash .ipad {
@@ -120,6 +128,12 @@ h2 {
 	background-repeat: no-repeat;
 	background-size: contain;
 	padding-top: 69%;
+}
+.splash .ipad img {
+	position: absolute;
+	top: 5.6%;
+	left: 9.476%;
+	width: 81.54%;
 }
 
 .feature-circle {
@@ -143,4 +157,38 @@ h2 {
 	background-repeat: no-repeat;
 	background-size: contain;
 	padding-top: 50%;
+}
+.iphone img {
+	position: absolute;
+	top: 7%;
+	left: 11.5%;
+	width: 77%;
+}
+
+section.faq {
+	background-color: #3c7eaa;
+	color: white;
+}
+
+.faq dt {
+	cursor: pointer;
+	font-weight: normal;
+	margin-top: 0.5em;
+}
+.faq dd {
+	height: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1s ease-in;
+}
+.faq dt.active + dd {
+	height: auto;
+	max-height: 10em;
+}
+.faq a {
+	border-bottom: white 1px dotted;
+	color: white;
+}
+.faq a:hover {
+	border-bottom-style: solid;
 }

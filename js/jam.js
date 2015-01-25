@@ -22,4 +22,8 @@ $(document).ready(function(){
 		$(this).addClass("animated fadeInDown");
 	}, {offset: "80%"});
 	
+	$(".faq").on("click", "dt", function(e){
+		$(this).toggleClass("active");
+	});
+	
 });
